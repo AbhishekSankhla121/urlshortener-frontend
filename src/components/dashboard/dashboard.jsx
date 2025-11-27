@@ -167,7 +167,7 @@ const handleredirect=(e,q)=>{
                   <button
                     className="copy-btn"
                     onClick={() =>
-                      copyText(`http://localhost:5000/${item.codeId}`)
+                      copyText(`${BASE_API.replace("/api","")}/${item.codeId}`)
                     }
                   >
                     Copy
