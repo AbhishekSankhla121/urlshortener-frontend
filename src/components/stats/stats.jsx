@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import './stats.css'
 
-  const BASE_API = process.env.REACT_APP_BASE_URL|| "http://localhosdedeet:5000/api";
-console.log("BAse",BASE_API)
+  const BASE_API = process.env.REACT_APP_BASE_URL|| "http://localhost:5000/api";
+
 export default function Stats() {
   const { id } = useParams();
   const navigate = useNavigate();
