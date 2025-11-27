@@ -1,0 +1,151 @@
+.dashboard-container {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Add URL Form */
+.add-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.add-form button {
+  padding: 12px 18px;
+  background: #111;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.add-form button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.add-form button:hover:not(:disabled) {
+  background: #333;
+}
+
+/* Search Box */
+.search-box {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* States */
+.loading,
+.empty,
+.error-message {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: crimson;
+}
+
+.empty {
+  color: #555;
+}
+
+/* Table */
+.links-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.links-table th,
+.links-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.links-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.truncate {
+  max-width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actions-col {
+  display: flex;
+  gap: 12px;
+}
+
+/* Buttons */
+.copy-btn,
+.stats-btn,
+.delete-btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.copy-btn {
+  background: #0073ff;
+  color: white;
+}
+
+.copy-btn:hover {
+  background: #005ad1;
+}
+
+.delete-btn {
+  background: crimson;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: rgb(185, 0, 40);
+}
+.stats-btn {
+  background: green;
+  color: white;
+}
+
+.stats-btn:hover {
+  background: rgba(0, 185, 9, 1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .truncate {
+    max-width: 150px;
+  }
+
+  .actions-col {
+    flex-direction: column;
+  }
+}

@@ -5,30 +5,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Next.js: debug server-side",
-      "type": "node-terminal",
-      "smartStep": true,
-      "request": "launch",
-      "command": "npm start"
-    },
-    {
-      "name": "Next.js: debug client-side",
+      "name": "client-side:3000)",
       "type": "chrome",
       "smartStep": true,
       "request": "launch",
       "url": "http://localhost:3000"
-    },
-    {
-      "name": "Next.js: debug full stack",
-      "type": "node-terminal",
-      "request": "launch",
-      "smartStep": true,
-      "command": "npm start",
-      "serverReadyAction": {
-        "pattern": "- Local:.+(https?://.+)",
-        "uriFormat": "%s",
-        "action": "debugWithChrome"
-      }
     }
   ]
 }
